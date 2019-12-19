@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+html { 
+      background: #B2B2B2;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+
+body {
+	 color: #ff8b3d;
+     font-family: 'Open Sans', sans-serif;
+	 font-size: 16px;
+}
+
+/*Стили для формы логина*/
+#login-form {
+	background-color: #363636;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;		
+	margin: 100px auto;
+	width: 300px;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+    -webkit-box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow:  0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+#login-form h1 {
+	background-color: #292829;
+	border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+#login-form fieldset {
+	border: none;
+	padding: 20px;
+	position: relative;
+}
+
+#login-form fieldset form {
+	overflow: hidden;
+	width: 270px;
+}
+
+#login-form fieldset form input {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	outline: none;
+    -webkit-appearance:none;
+    width: 260px;
+    position: center;
+}
+
+#login-form fieldset form input[type="text"] {
+	color: #363636;
+	border: 1px solid #292829;
+	border-radius: 3px 3px 0px 0px;
+	-moz-border-radius: 3px 3px 0px 0px;
+	-webkit-border-radius: 3px 3px 0px 0px;
+	padding: 12px 10px;
+	width: 238px;
+    -webkit-appearance:none;
+}
+
+#login-form fieldset form input[type="password"] {
+	color: #363636;
+	border: 1px solid #292829;
+	border-top: none;
+	border-radius: 0px 0px 3px 3px;
+	-moz-border-radius: 0px 0px 3px 3px;
+	-webkit-border-radius: 0px 0px 3px 3px;
+	padding: 12px 10px;
+	width: 238px;
+   -webkit-appearance:none;
+}
+
+#login-form fieldset form input[type="submit"] {
+	background-color: #ebebeb;
+	border: none;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #404040;
+	cursor: pointer;
+	float: none;
+	font-weight: bold;
+	margin-top: 20px;
+	padding: 12px 12px;
+   -webkit-appearance: none;
+}
+
+#login-form fieldset form input[type="submit"]:hover {
+	background-color: #e0e0e0;
+}
+
+/*Стили для формы приложения todo*/
+#app-form {
+    background-color:#c9c9c9;
+    width: 900px;
+    margin: 30px auto;
+	border-radius: 2px;
+	border-color: #363636;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+#app-form-header {
+	background-color:#363636;
+	color: rgb(241, 235, 235);
+	border-radius: 2px 2px 0px 0px;
+	-moz-border-radius: 2px 2px 0px 0px;
+	-webkit-border-radius: 2px 2px 0px 0px;
+	width: 900px;
+}
+
+#app-form-title {
+	background-color: #363636;
+	text-align: center;
+	border-radius: 2px 2px 0px 0px;
+	-moz-border-radius: 2px 2px 0px 0px;
+	-webkit-border-radius: 2px 2px 0px 0px;
+	width: 900px;
+}
+
+#app-title-text {
+	color: #fff;
+	text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+	font-size: 50px;
+}
+
+#app-info {
+	background-color: #c9c9c9;
+	color: #363636;
+	width: 900px;
+	border-color: #363636;
+	font-family: "Consolas","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+}
+
+#app-info-tasks-all {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+#app-info-tasks-done {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+#app-info-tasks-current {
+	text-align: center;
+}
+
+#app-filter {
+	background-color: #363636;
+	width: 900px;
+	margin-top: 2px;
+}
+
+#app-filter-tasks-all {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+#app-filter-tasks-done {
+	float: left;
+	width: 300px;
+	text-align: center;
+}
+
+#app-filter-tasks-current {
+	text-align: center;
+}
+
+button {
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #757575;
+    position: relative;
+    height: 36px;
+    margin: 1px;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    font-family: "Consolas","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+button:hover {
+    background-color: rgba(158,158,158,.2);
+}
+
+button:active {
+    background-color: rgba(158,158,158,.4);
+}
+
+#app-add {
+	background-color: #c9c9c9;
+	margin-top: 2px;
+}
+
+#app-add-form {
+    display: flex;
+	background-color: #c9c9c9;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 10px;
+}
+
+#app-add-form input {
+	color: #363636;
+    flex: 1;
+    outline: none;
+    transition: all .2s;
+}
+
+#app-add-form input:focus {
+	border: 1px solid #363636;
+}
+
+#app-add-form button {
+    margin-left: 10px;
+}
+
+#border {
+	background-color: #363636;
+	height: 2px;
+	width: 900px;
+}
+
+#app-list-counter {
+	background-color: #c9c9c9;
+	width: 900px;
+}
+
+#app-list {
+	border-right: 1px solid rgba(0,0,0,.1);
+	background-color: #c9c9c9;
+	float: left;
+	width: 800px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #363636;
+	border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+	padding: 0;
+    height: 200px;
+	overflow-y: auto;
+}
+
+#app-counter {
+	background-color: #c9c9c9;
+	color: #363636;
+	border-color: #363636;
+	font-family: "Consolas","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+	height: 200px;
+}
+
+#app-info-tasks-border {
+	height: 20px;
+}
+
+#app-info-tasks-all-right {
+	height: 60px;
+	text-align: center;
+}
+
+#all-right-tasks {
+	font-size: 20px;
+}
+
+#app-info-tasks-done-right {
+	height: 60px;
+	text-align: center;
+}
+
+#done-right-tasks {
+	font-size: 20px;
+}
+
+#app-info-tasks-current-right {
+	text-align: center;
+}
+
+#current-right-tasks {
+	font-size: 20px;
+}
+
+.todo-item {
+    display: flex;
+    font-size: 1rem;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+    background-color: #c9c9c9;
+    transition: all .2s;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 1em;
+    align-items: center;
+}
+
+.todo-item.completed * {
+    color: lightgray;
+}
+
+.todo-item .checkbox {
+	margin-right: .5rem;
+}
+
+.todo-item .title,
+.todo-item .textfield {
+	color: #363636;
+    margin-right: auto;
+}
+
+.todo-item.completed .title {
+    text-decoration: line-through;
+}
+
+.todo-item.editing .title {
+    display: none;
+}
+
+.todo-item .textfield {
+    display: none;
+}
+
+.todo-item.editing .textfield {
+	border: 1px solid #363636;
+	width: 600px;
+    outline: none;
+    transition: all .2s;
+	display: block;
+}
+
+.todo-item button {
+    opacity: 0;
+    transition: all .2s;
+}
+
+.todo-item:hover button:not(.checkbox) {
+    opacity: 1;
+}
+
+#app-footer {
+	background-color:#363636;
+	border-radius: 0px 0px 2px 2px;
+	-moz-border-radius: 0px 0px 2px 2px;
+	-webkit-border-radius: 0px 0px 2px 2px;
+	height: 40px;
+	width: 900px;
+}
+
+#app-log-out {
+	text-align: center;
+}
+
+#button-exit {
+	background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #757575;
+    position: relative;
+    height: auto;
+    margin: 1px;
+    min-width: 64px;
+    padding: 1px;
+    display: inline-block;
+    font-family: "Consolas","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+
+#button-exit:hover {
+    background-color: rgba(158,158,158,.2);
+}
+
+#button-exit:active {
+    background-color: rgba(158,158,158,.4);
+}
+
+/*Стили для окна уведомлений*/
+#notification {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 45px;
+    padding: 0px;
+    background:#c9c9c9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 2px #363636 solid;
+	position: fixed;
+}
+
+#notification p {
+    position: absolute;
+    top: -10px;
+    text-align: center;
+    width: 100%;
+    color: #bb0000;
+    font-size: 18px;
+    font-family: var(--righteous-font);
+}

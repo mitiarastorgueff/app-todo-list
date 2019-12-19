@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TODO-LIST</title>
+        <link rel="icon" href="icon/todoicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css" media="screen" type="text/css"/>
+        <script type="text/javascript" src="js/index.js"></script>
+    </head>
+    <body onload="routing()">
+        <template id="template-login-form">
+        <div id="login-form">
+            <h1>WELCOM IN TODO-LIST</h1>
+            <fieldset>
+                <form onsubmit="return false">
+                    <input type="text" id="login-input" value="Login" onBlur="if(this.value=='')this.value='Login'" autocomplete="off">
+                    <input type="password" id="password-input" value="Password" onBlur="if(this.value=='')this.value='Password'" autocomplete="off">
+                    <input type="submit" id="submit-sing-in" value="SING IN">
+                </form>
+            </fieldset>
+        </div>
+        </template>
+        <template id="template-app-form">
+        <div id="app-form">
+            <div id="app-form-header">
+                <div id="app-form-title">
+                        <span id="app-title-text">TODO-LIST</span>
+                </div>
+                <div id="app-info">
+                    <div id="app-info-tasks-all">
+                        <span>All tasks:</span>
+                        <span id="all-tasks">0</span>
+                    </div>
+                    <div id="app-info-tasks-done">
+                        <span>Done tasks:</span>
+                        <span id="done-tasks">0</span>
+                    </div>                
+                    <div id="app-info-tasks-current">
+                        <span>Current tasks:</span>
+                        <span id="current-tasks">0</span>
+                    </div> 
+                </div>
+                <div id="app-filter">
+                    <div id="app-filter-tasks-all">
+                        <button id="app-filter-all">ALL TASKS</button>
+                    </div>
+                    <div id="app-filter-tasks-done">
+                        <button id="app-filter-done">DONE TASKS</button>
+                    </div>
+                    <div id="app-filter-tasks-current">
+                        <button id="app-filter-current">CURRENT TASKS</button>
+                    </div>
+                </div>
+                <div id="app-add">
+                    <form id="app-add-form" onsubmit="return false">
+                        <input id="add-input" type="text" autocomplete="off">
+                        <button id="add-button" type="submit">ADD</button>
+                    </form>
+                </div>
+                <div id="border"></div>
+                <div id="app-list-counter">
+                    <div id="app-list">
+                        <ul id="app-todo-list"></ul>
+                    </div>
+                    <div id="app-counter">
+                        <div id="app-info-tasks-border"></div>
+                        <div id="app-info-tasks-all-right">
+                            <span>ALL</span><br>
+                            <span id="all-right-tasks">0</span>
+                        </div>
+                        <div id="app-info-tasks-done-right">
+                            <span>DONE</span><br>
+                            <span id="done-right-tasks">0</span>
+                        </div>
+                        <div id="app-info-tasks-current-right">
+                            <span>CURRENT</span><br>
+                            <span id="current-right-tasks">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="app-footer">
+                <div id="app-log-out">
+                    <button id="button-exit">LOG OUT</button>
+                </div>
+            </div>
+        </div>
+        </template>
+        <template id="template-notification">
+        <div id="notification">
+            <p>Notifications</p>
+        </div>
+        </template>
+    </body>
+</html>
